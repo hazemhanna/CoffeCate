@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AdsCell" id="bVU-ei-CUI" customClass="AdsCell" customModule="CoffeeCate" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="167"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="300" height="167"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pS9-cP-SRL" customClass="CustomView" customModule="CoffeeCate" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="167"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0OK-LD-8To" customClass="CustomView" customModule="CoffeeCate" customModuleProvider="target">
+                                <rect key="frame" x="7.5" y="4" width="285" height="159"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ads" translatesAutoresizingMaskIntoConstraints="NO" id="zIE-Kk-kqq">
+                                        <rect key="frame" x="0.0" y="0.0" width="285" height="159"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="zIE-Kk-kqq" firstAttribute="centerY" secondItem="0OK-LD-8To" secondAttribute="centerY" id="K0E-TI-NhY"/>
+                                    <constraint firstItem="zIE-Kk-kqq" firstAttribute="height" secondItem="0OK-LD-8To" secondAttribute="height" id="REO-7p-cTa"/>
+                                    <constraint firstItem="zIE-Kk-kqq" firstAttribute="centerX" secondItem="0OK-LD-8To" secondAttribute="centerX" id="TqY-gF-PKC"/>
+                                    <constraint firstItem="zIE-Kk-kqq" firstAttribute="width" secondItem="0OK-LD-8To" secondAttribute="width" id="n4H-bw-m0n"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0OK-LD-8To" firstAttribute="height" secondItem="pS9-cP-SRL" secondAttribute="height" multiplier="0.95" id="GQt-CD-3gZ"/>
+                            <constraint firstItem="0OK-LD-8To" firstAttribute="width" secondItem="pS9-cP-SRL" secondAttribute="width" multiplier="0.95" id="Hgg-lw-7aZ"/>
+                            <constraint firstItem="0OK-LD-8To" firstAttribute="centerX" secondItem="pS9-cP-SRL" secondAttribute="centerX" id="KrP-FN-KDG"/>
+                            <constraint firstItem="0OK-LD-8To" firstAttribute="centerY" secondItem="pS9-cP-SRL" secondAttribute="centerY" id="qve-7z-gwb"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="pS9-cP-SRL" firstAttribute="height" secondItem="bVU-ei-CUI" secondAttribute="height" id="0r0-ws-tZ9"/>
+                <constraint firstItem="pS9-cP-SRL" firstAttribute="width" secondItem="bVU-ei-CUI" secondAttribute="width" id="96g-ds-Ead"/>
+                <constraint firstItem="pS9-cP-SRL" firstAttribute="centerX" secondItem="WoX-HM-9ha" secondAttribute="centerX" id="auS-QD-ScX"/>
+                <constraint firstItem="pS9-cP-SRL" firstAttribute="top" secondItem="bVU-ei-CUI" secondAttribute="top" id="gi4-qj-q80"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="WoX-HM-9ha"/>
+            <size key="customSize" width="300" height="167"/>
+            <connections>
+                <outlet property="adImageView" destination="zIE-Kk-kqq" id="c1n-xR-zs1"/>
+                <outlet property="imageView" destination="0OK-LD-8To" id="rEC-tX-H37"/>
+            </connections>
+            <point key="canvasLocation" x="318.84057971014494" y="136.94196428571428"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ads" width="824" height="392"/>
+    </resources>
+</document>

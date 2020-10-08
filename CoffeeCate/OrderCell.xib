@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="JosefinSans-Regular.ttf">
+            <string>JosefinSans-Regular</string>
+        </array>
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="OrderCell" rowHeight="212" id="KGk-i7-Jjw" customClass="OrderCell" customModule="CoffeeCate" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="391" height="212"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="391" height="212"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iUr-hj-GMt">
+                        <rect key="frame" x="0.0" y="0.0" width="391" height="212"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C27-gr-R52">
+                                <rect key="frame" x="16" y="8" width="359" height="196"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blue-coffee-cup-with-ear-drawn-foam_1286-221" translatesAutoresizingMaskIntoConstraints="NO" id="daZ-yg-jsX">
+                                        <rect key="frame" x="0.0" y="0.0" width="359" height="120"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2r6-Tm-JyG">
+                                        <rect key="frame" x="243" y="128" width="100" height="60"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Totel:230 EGY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u1y-A2-kTg">
+                                                <rect key="frame" x="1" y="0.0" width="98.5" height="21"/>
+                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eit-ET-iNO" customClass="CustomButtons" customModule="CoffeeCate" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="29" width="100" height="31"/>
+                                                <color key="backgroundColor" red="0.14117647058823529" green="0.074509803921568626" blue="0.043137254901960784" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="esV-ab-Je2"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="JosefinSans-Regular" family="Josefin Sans" pointSize="16"/>
+                                                <state key="normal" title="Buy again">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="MhC-yQ-reg"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="AVY-cX-8Xq">
+                                        <rect key="frame" x="16" y="136" width="82.5" height="52"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20/3/2020" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WKy-fz-jyj">
+                                                <rect key="frame" x="0.0" y="0.0" width="82.5" height="22.5"/>
+                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Elrhab 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7DK-4X-OIG">
+                                                <rect key="frame" x="0.0" y="29.5" width="82.5" height="22.5"/>
+                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.34000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="AVY-cX-8Xq" firstAttribute="top" secondItem="daZ-yg-jsX" secondAttribute="bottom" constant="16" id="0EM-sf-elO"/>
+                                    <constraint firstItem="daZ-yg-jsX" firstAttribute="height" secondItem="C27-gr-R52" secondAttribute="height" multiplier="0.612245" id="44G-LB-RvU"/>
+                                    <constraint firstItem="2r6-Tm-JyG" firstAttribute="top" secondItem="daZ-yg-jsX" secondAttribute="bottom" constant="8" id="9xb-Oc-8R9"/>
+                                    <constraint firstAttribute="bottom" secondItem="2r6-Tm-JyG" secondAttribute="bottom" constant="8" id="LMS-T8-smr"/>
+                                    <constraint firstAttribute="trailing" secondItem="2r6-Tm-JyG" secondAttribute="trailing" constant="16" id="M9e-kn-eYY"/>
+                                    <constraint firstItem="daZ-yg-jsX" firstAttribute="top" secondItem="C27-gr-R52" secondAttribute="top" id="PWQ-c2-MiO"/>
+                                    <constraint firstItem="AVY-cX-8Xq" firstAttribute="leading" secondItem="C27-gr-R52" secondAttribute="leading" constant="16" id="g0u-ey-eJk"/>
+                                    <constraint firstItem="daZ-yg-jsX" firstAttribute="leading" secondItem="C27-gr-R52" secondAttribute="leading" id="hUT-5D-fLc"/>
+                                    <constraint firstItem="daZ-yg-jsX" firstAttribute="width" secondItem="C27-gr-R52" secondAttribute="width" id="oTX-Rh-Le2"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="C27-gr-R52" secondAttribute="bottom" constant="8" id="2Vg-Ps-Kua"/>
+                            <constraint firstAttribute="trailing" secondItem="C27-gr-R52" secondAttribute="trailing" constant="16" id="abg-jc-Xic"/>
+                            <constraint firstItem="C27-gr-R52" firstAttribute="leading" secondItem="iUr-hj-GMt" secondAttribute="leading" constant="16" id="bv5-El-UHx"/>
+                            <constraint firstItem="C27-gr-R52" firstAttribute="top" secondItem="iUr-hj-GMt" secondAttribute="top" constant="8" id="ndX-lL-5ph"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="iUr-hj-GMt" secondAttribute="trailing" id="RR9-2e-Jy4"/>
+                    <constraint firstItem="iUr-hj-GMt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="h1Z-8u-4PT"/>
+                    <constraint firstAttribute="bottom" secondItem="iUr-hj-GMt" secondAttribute="bottom" id="lPL-FN-OeM"/>
+                    <constraint firstItem="iUr-hj-GMt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="y80-9n-7kY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="ContentView" destination="C27-gr-R52" id="I5b-fW-Grd"/>
+                <outlet property="productImageView" destination="daZ-yg-jsX" id="G3E-yS-cyx"/>
+            </connections>
+            <point key="canvasLocation" x="70" y="93"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="blue-coffee-cup-with-ear-drawn-foam_1286-221" width="340" height="112"/>
+    </resources>
+</document>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NotificationCell" rowHeight="95" id="KGk-i7-Jjw" customClass="NotificationCell" customModule="CoffeeCate" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="361" height="95"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="361" height="95"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gYp-ad-AMu" customClass="CustomView" customModule="CoffeeCate" customModuleProvider="target">
+                        <rect key="frame" x="9" y="9.5" width="343" height="76"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7NX-cQ-42q" customClass="CustomView" customModule="CoffeeCate" customModuleProvider="target">
+                                <rect key="frame" x="16" y="33" width="10" height="10"/>
+                                <color key="backgroundColor" red="0.12549019607843137" green="0.60784313725490191" blue="0.090196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="10" id="1Dr-9z-AQL"/>
+                                    <constraint firstAttribute="height" constant="10" id="SUF-NP-vGv"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LoremI psumisi mpldu mmy text " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="orZ-IL-tmd">
+                                <rect key="frame" x="34" y="29.5" width="240" height="17"/>
+                                <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2h" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mYa-Ps-XW2">
+                                <rect key="frame" x="312" y="29.5" width="15" height="17"/>
+                                <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.34000000000000002" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="7NX-cQ-42q" firstAttribute="leading" secondItem="gYp-ad-AMu" secondAttribute="leading" constant="16" id="0sj-U6-0N9"/>
+                            <constraint firstItem="orZ-IL-tmd" firstAttribute="centerY" secondItem="gYp-ad-AMu" secondAttribute="centerY" id="5wY-9c-jk9"/>
+                            <constraint firstAttribute="trailing" secondItem="mYa-Ps-XW2" secondAttribute="trailing" constant="16" id="Ne5-0y-tse"/>
+                            <constraint firstItem="mYa-Ps-XW2" firstAttribute="centerY" secondItem="gYp-ad-AMu" secondAttribute="centerY" id="Q2y-F7-Ogz"/>
+                            <constraint firstItem="orZ-IL-tmd" firstAttribute="leading" secondItem="7NX-cQ-42q" secondAttribute="trailing" constant="8" id="b7v-tW-nqi"/>
+                            <constraint firstItem="7NX-cQ-42q" firstAttribute="centerY" secondItem="gYp-ad-AMu" secondAttribute="centerY" id="dwX-Kh-W9j"/>
+                            <constraint firstItem="orZ-IL-tmd" firstAttribute="width" secondItem="gYp-ad-AMu" secondAttribute="width" multiplier="0.7" id="pCn-vb-oq2"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="gYp-ad-AMu" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="3Tn-24-Qz8"/>
+                    <constraint firstItem="gYp-ad-AMu" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.8" id="P0b-pO-DxX"/>
+                    <constraint firstItem="gYp-ad-AMu" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.95" id="nXc-Zb-14H"/>
+                    <constraint firstItem="gYp-ad-AMu" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="xMR-wN-flK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="ContentView" destination="gYp-ad-AMu" id="Ws8-2t-SdK"/>
+            </connections>
+            <point key="canvasLocation" x="125.36231884057972" y="119.53125"/>
+        </tableViewCell>
+    </objects>
+</document>

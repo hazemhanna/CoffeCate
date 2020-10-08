@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SupportingCell" rowHeight="68" id="KGk-i7-Jjw" customClass="SupportingCell" customModule="CoffeeCate" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="325" height="68"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="325" height="68"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iir-OV-IMV" customClass="CustomizedView" customModule="Osta" customModuleProvider="target">
+                        <rect key="frame" x="8" y="4.5" width="309" height="35"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="dIs-cu-bTk">
+                                <rect key="frame" x="0.0" y="10" width="309" height="35"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Vector Smart Object" translatesAutoresizingMaskIntoConstraints="NO" id="vo4-cI-BqS">
+                                        <rect key="frame" x="0.0" y="0.0" width="25" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="25" id="Hxj-WX-VrR"/>
+                                            <constraint firstAttribute="height" constant="25" id="qAS-yL-Eve"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bxn-5w-KAo">
+                                        <rect key="frame" x="35" y="0.0" width="274" height="35"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
+                                        <state key="normal">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dIs-cu-bTk" firstAttribute="width" secondItem="Iir-OV-IMV" secondAttribute="width" id="Hab-vj-kFf"/>
+                            <constraint firstItem="dIs-cu-bTk" firstAttribute="height" secondItem="Iir-OV-IMV" secondAttribute="height" id="Tx1-E4-6oB"/>
+                            <constraint firstItem="dIs-cu-bTk" firstAttribute="top" secondItem="Iir-OV-IMV" secondAttribute="top" constant="10" id="azW-U0-rgX"/>
+                            <constraint firstItem="dIs-cu-bTk" firstAttribute="centerX" secondItem="Iir-OV-IMV" secondAttribute="centerX" id="fAm-Px-NQn"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="NO"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                <size key="value" width="0.0" height="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                <real key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Iir-OV-IMV" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.8" id="Aay-gn-FHe"/>
+                    <constraint firstItem="Iir-OV-IMV" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="a88-pt-iLE"/>
+                    <constraint firstItem="Iir-OV-IMV" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="oER-s3-1Te"/>
+                    <constraint firstItem="Iir-OV-IMV" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.95" id="ojq-bt-gQA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="section_image" destination="vo4-cI-BqS" id="1Fu-8M-05q"/>
+                <outlet property="section_name" destination="Bxn-5w-KAo" id="yll-tt-orx"/>
+            </connections>
+            <point key="canvasLocation" x="202.17391304347828" y="34.821428571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Vector Smart Object" width="27" height="22.5"/>
+    </resources>
+</document>

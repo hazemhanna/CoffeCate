@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Semibold.ttf">
+            <string>Lato-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SideMenuCell" rowHeight="68" id="dCF-Rj-04M" customClass="SideMenuCell" customModule="Matjark" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="294" height="68"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dCF-Rj-04M" id="80N-Dl-kYn">
+                <rect key="frame" x="0.0" y="0.0" width="294" height="68"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Ew-Bj-2Ib" customClass="CustomView" customModule="Matjark" customModuleProvider="target">
+                        <rect key="frame" x="7.5" y="7" width="279" height="54"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SMd-yb-ook">
+                                <rect key="frame" x="16" y="19" width="38" height="16.5"/>
+                                <fontDescription key="fontDescription" name="Lato-Semibold" family="Lato" pointSize="14"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="Lato-Semibold" family="Lato" pointSize="19"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="SMd-yb-ook" firstAttribute="centerY" secondItem="5Ew-Bj-2Ib" secondAttribute="centerY" id="03c-MC-NSY"/>
+                            <constraint firstItem="SMd-yb-ook" firstAttribute="leading" secondItem="5Ew-Bj-2Ib" secondAttribute="leading" constant="16" id="wmv-h5-xnB"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cUX-i3-ISx">
+                        <rect key="frame" x="0.0" y="61" width="294" height="0.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="f0L-ji-KtA"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="5Ew-Bj-2Ib" firstAttribute="height" secondItem="80N-Dl-kYn" secondAttribute="height" multiplier="0.8" id="0qJ-rF-Wyh"/>
+                    <constraint firstItem="cUX-i3-ISx" firstAttribute="width" secondItem="80N-Dl-kYn" secondAttribute="width" id="BaF-m9-hLS"/>
+                    <constraint firstItem="5Ew-Bj-2Ib" firstAttribute="centerY" secondItem="80N-Dl-kYn" secondAttribute="centerY" id="PYQ-FB-qkz"/>
+                    <constraint firstItem="5Ew-Bj-2Ib" firstAttribute="centerX" secondItem="80N-Dl-kYn" secondAttribute="centerX" id="Vfv-Sw-rao"/>
+                    <constraint firstItem="5Ew-Bj-2Ib" firstAttribute="width" secondItem="80N-Dl-kYn" secondAttribute="width" multiplier="0.95" id="h4Z-s2-SIY"/>
+                    <constraint firstItem="cUX-i3-ISx" firstAttribute="top" secondItem="5Ew-Bj-2Ib" secondAttribute="bottom" id="ilp-14-fM0"/>
+                    <constraint firstItem="cUX-i3-ISx" firstAttribute="centerX" secondItem="80N-Dl-kYn" secondAttribute="centerX" id="vVi-50-uAq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="w9Q-NG-4u5"/>
+            <connections>
+                <outlet property="sideMenuLabel" destination="SMd-yb-ook" id="T2I-XN-G98"/>
+            </connections>
+            <point key="canvasLocation" x="96" y="127"/>
+        </tableViewCell>
+    </objects>
+</document>
