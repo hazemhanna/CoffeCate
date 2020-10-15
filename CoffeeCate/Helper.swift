@@ -14,10 +14,10 @@ class Helper {
     
     class func restartApp() {
         guard let window = UIApplication.shared.keyWindow else { return }
-        let sb = UIStoryboard(name: "Home", bundle: nil)
+        let sb = UIStoryboard(name: "Main", bundle: nil)
         var vc: UIViewController
         if Helper.getAPIToken() == nil{
-            vc = sb.instantiateViewController(withIdentifier: "HomeTabController")
+            vc = sb.instantiateViewController(withIdentifier: "HomeVC")
             Singletone.instance.appUserType = .guest
             window.rootViewController = vc
             UIView.transition(with: window, duration: 0.5, options: .transitionFlipFromRight, animations: nil, completion: nil)

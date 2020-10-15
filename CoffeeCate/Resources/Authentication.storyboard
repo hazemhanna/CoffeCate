@@ -61,10 +61,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="1ub-3f-bcg">
-                                <rect key="frame" x="62" y="406.5" width="290" height="90"/>
+                                <rect key="frame" x="62" y="406.5" width="290" height="76"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Sg-GT-WOW" customClass="CustomTextField" customModule="CoffeeCate" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="290" height="41"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="290" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <userDefinedRuntimeAttributes>
@@ -83,7 +83,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3qL-w0-8nJ" customClass="CustomTextField" customModule="CoffeeCate" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="49" width="290" height="41"/>
+                                        <rect key="frame" x="0.0" y="42" width="290" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <userDefinedRuntimeAttributes>
@@ -104,7 +104,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CBX-Et-cvS" customClass="CustomButtons" customModule="CoffeeCate" customModuleProvider="target">
-                                <rect key="frame" x="157" y="512.5" width="100" height="50"/>
+                                <rect key="frame" x="157" y="498.5" width="100" height="50"/>
                                 <color key="backgroundColor" red="0.64705882349999999" green="0.54117647059999996" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="aYi-dd-dCo"/>
@@ -123,13 +123,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forget Password !" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mPy-Ya-o3u">
-                                <rect key="frame" x="138.5" y="578.5" width="137.5" height="20.5"/>
+                                <rect key="frame" x="138.5" y="564.5" width="137.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Amc-oN-PaX">
-                                <rect key="frame" x="132" y="578.5" width="150" height="30"/>
+                                <rect key="frame" x="132" y="564.5" width="150" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="KVA-8e-fRt"/>
                                     <constraint firstAttribute="height" constant="30" id="gYa-vt-Q3M"/>
@@ -139,7 +139,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uyb-Oy-Fxl">
-                                <rect key="frame" x="132" y="607" width="150" height="1"/>
+                                <rect key="frame" x="132" y="593" width="150" height="1"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="3z2-j0-beK"/>
@@ -147,7 +147,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oeA-kQ-SWv" customClass="CustomView" customModule="CoffeeCate" customModuleProvider="target">
-                                <rect key="frame" x="62" y="640" width="290" height="50"/>
+                                <rect key="frame" x="62" y="626" width="290" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mrL-Oa-piS">
                                         <rect key="frame" x="84" y="0.0" width="174" height="50"/>
@@ -188,7 +188,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cm8-e7-NWt">
-                                <rect key="frame" x="57" y="722" width="300" height="50"/>
+                                <rect key="frame" x="57" y="708" width="300" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="ZHN-Nh-a2c"/>
                                     <constraint firstAttribute="height" constant="50" id="ycS-8H-OLy"/>
@@ -608,13 +608,13 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter the 4-digit code sent to your mail" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zhp-se-g39">
-                                                <rect key="frame" x="20.5" y="270" width="373" height="20"/>
+                                                <rect key="frame" x="20.5" y="270" width="373" height="24"/>
                                                 <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fv2-no-BBA">
-                                                <rect key="frame" x="20.5" y="320" width="373" height="100"/>
+                                                <rect key="frame" x="20.5" y="324" width="373" height="100"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u4o-9i-Hme" customClass="CustomTextField" customModule="CoffeeCate" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="86" height="100"/>
@@ -698,7 +698,7 @@
                                                 </constraints>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Didn't receive the code? Resend" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aqf-tu-kU4">
-                                                <rect key="frame" x="20.5" y="430" width="373" height="40"/>
+                                                <rect key="frame" x="20.5" y="434" width="373" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="N30-uJ-TeK"/>
                                                 </constraints>
@@ -981,172 +981,190 @@
                                     <constraint firstAttribute="height" constant="200" id="Afn-Kb-7ym"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BACK GROUND" translatesAutoresizingMaskIntoConstraints="NO" id="Kt0-WL-p7O">
-                                <rect key="frame" x="0.0" y="245" width="414" height="651"/>
-                            </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bFi-4i-moS" customClass="CustomView" customModule="CoffeeCate" customModuleProvider="target">
-                                <rect key="frame" x="132" y="195" width="150" height="150"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RQW-Lo-iPw" customClass="CustomView" customModule="CoffeeCate" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="225" width="414" height="671"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="6011" translatesAutoresizingMaskIntoConstraints="NO" id="mja-Tq-w0L" customClass="CustomImageView" customModule="CoffeeCate" customModuleProvider="target">
-                                        <rect key="frame" x="1.5" y="2.5" width="147" height="145.5"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BACK GROUND" translatesAutoresizingMaskIntoConstraints="NO" id="Kt0-WL-p7O">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="671"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bFi-4i-moS" customClass="CustomView" customModule="CoffeeCate" customModuleProvider="target">
+                                        <rect key="frame" x="132" y="-70" width="150" height="150"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="6011" translatesAutoresizingMaskIntoConstraints="NO" id="mja-Tq-w0L" customClass="CustomImageView" customModule="CoffeeCate" customModuleProvider="target">
+                                                <rect key="frame" x="1.5" y="2.5" width="147" height="145.5"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="70"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="65D-cm-ijA"/>
+                                            <constraint firstItem="mja-Tq-w0L" firstAttribute="centerY" secondItem="bFi-4i-moS" secondAttribute="centerY" id="IZx-fc-yfw"/>
+                                            <constraint firstItem="mja-Tq-w0L" firstAttribute="height" secondItem="bFi-4i-moS" secondAttribute="height" multiplier="0.97" id="KXa-Cs-3bV"/>
+                                            <constraint firstItem="mja-Tq-w0L" firstAttribute="centerX" secondItem="bFi-4i-moS" secondAttribute="centerX" id="ftF-LS-hMn"/>
+                                            <constraint firstAttribute="width" constant="150" id="tZp-Tf-kDo"/>
+                                            <constraint firstItem="mja-Tq-w0L" firstAttribute="width" secondItem="bFi-4i-moS" secondAttribute="width" multiplier="0.98" id="vsN-mZ-qcB"/>
+                                        </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="70"/>
+                                                <real key="value" value="75"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
-                                    </imageView>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8G9-dm-27O" customClass="CustomButtons" customModule="CoffeeCate" customModuleProvider="target">
+                                        <rect key="frame" x="132" y="440" width="150" height="50"/>
+                                        <color key="backgroundColor" red="0.64705882349999999" green="0.54117647059999996" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="X35-qm-Pi1"/>
+                                            <constraint firstAttribute="height" constant="50" id="dyo-M4-HbQ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="JosefinSans-Regular" family="Josefin Sans" pointSize="18"/>
+                                        <state key="normal" title="Edit">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="KCm-Zl-gjc">
+                                        <rect key="frame" x="20" y="200" width="374" height="224"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vif-Qn-ekE" customClass="CustomTextField" customModule="CoffeeCate" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="rlH-aS-1v8"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="7"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                        <color key="value" red="0.64705882349999999" green="0.54117647059999996" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gev-9s-jW7" customClass="CustomTextField" customModule="CoffeeCate" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="58" width="374" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="cGJ-tS-yWG"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="7"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                        <color key="value" red="0.64705882349999999" green="0.54117647059999996" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mobile" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6TF-wU-57H" customClass="CustomTextField" customModule="CoffeeCate" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="116" width="374" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="u1O-qe-pUo"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="7"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                        <color key="value" red="0.64705882349999999" green="0.54117647059999996" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="99H-WB-GFd" customClass="CustomTextField" customModule="CoffeeCate" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="174" width="374" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="9KQ-sl-ZPV"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="7"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                        <color key="value" red="0.64705882349999999" green="0.54117647059999996" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="65D-cm-ijA"/>
-                                    <constraint firstItem="mja-Tq-w0L" firstAttribute="centerY" secondItem="bFi-4i-moS" secondAttribute="centerY" id="IZx-fc-yfw"/>
-                                    <constraint firstItem="mja-Tq-w0L" firstAttribute="height" secondItem="bFi-4i-moS" secondAttribute="height" multiplier="0.97" id="KXa-Cs-3bV"/>
-                                    <constraint firstItem="mja-Tq-w0L" firstAttribute="centerX" secondItem="bFi-4i-moS" secondAttribute="centerX" id="ftF-LS-hMn"/>
-                                    <constraint firstAttribute="width" constant="150" id="tZp-Tf-kDo"/>
-                                    <constraint firstItem="mja-Tq-w0L" firstAttribute="width" secondItem="bFi-4i-moS" secondAttribute="width" multiplier="0.98" id="vsN-mZ-qcB"/>
+                                    <constraint firstItem="Kt0-WL-p7O" firstAttribute="centerX" secondItem="RQW-Lo-iPw" secondAttribute="centerX" id="3Qn-Cf-owN"/>
+                                    <constraint firstItem="8G9-dm-27O" firstAttribute="top" secondItem="KCm-Zl-gjc" secondAttribute="bottom" constant="16" id="BFq-d2-BrO"/>
+                                    <constraint firstItem="bFi-4i-moS" firstAttribute="top" secondItem="RQW-Lo-iPw" secondAttribute="top" constant="-70" id="C1B-ib-pfj"/>
+                                    <constraint firstItem="Kt0-WL-p7O" firstAttribute="centerY" secondItem="RQW-Lo-iPw" secondAttribute="centerY" id="FQA-iw-hRP"/>
+                                    <constraint firstItem="8G9-dm-27O" firstAttribute="centerX" secondItem="RQW-Lo-iPw" secondAttribute="centerX" id="KOL-Zc-uya"/>
+                                    <constraint firstItem="Kt0-WL-p7O" firstAttribute="width" secondItem="RQW-Lo-iPw" secondAttribute="width" id="Pbo-Yt-y85"/>
+                                    <constraint firstItem="KCm-Zl-gjc" firstAttribute="leading" secondItem="RQW-Lo-iPw" secondAttribute="leading" constant="20" id="TH2-ue-HKi"/>
+                                    <constraint firstItem="KCm-Zl-gjc" firstAttribute="top" secondItem="bFi-4i-moS" secondAttribute="bottom" constant="120" id="Uiw-N7-5kO"/>
+                                    <constraint firstItem="Kt0-WL-p7O" firstAttribute="height" secondItem="RQW-Lo-iPw" secondAttribute="height" id="V31-5h-0Ho"/>
+                                    <constraint firstItem="bFi-4i-moS" firstAttribute="centerX" secondItem="RQW-Lo-iPw" secondAttribute="centerX" id="WoZ-8u-OId"/>
+                                    <constraint firstItem="KCm-Zl-gjc" firstAttribute="centerX" secondItem="RQW-Lo-iPw" secondAttribute="centerX" id="oNQ-hk-uFx"/>
+                                    <constraint firstAttribute="trailing" secondItem="KCm-Zl-gjc" secondAttribute="trailing" constant="20" id="u9r-eV-Tr6"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="75"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="2"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <real key="value" value="45"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8G9-dm-27O" customClass="CustomButtons" customModule="CoffeeCate" customModuleProvider="target">
-                                <rect key="frame" x="132" y="615" width="150" height="50"/>
-                                <color key="backgroundColor" red="0.64705882349999999" green="0.54117647059999996" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="X35-qm-Pi1"/>
-                                    <constraint firstAttribute="height" constant="50" id="dyo-M4-HbQ"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="JosefinSans-Regular" family="Josefin Sans" pointSize="18"/>
-                                <state key="normal" title="Edit">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="KCm-Zl-gjc">
-                                <rect key="frame" x="20.5" y="375" width="373" height="224"/>
-                                <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vif-Qn-ekE" customClass="CustomTextField" customModule="CoffeeCate" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="373" height="50"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="rlH-aS-1v8"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="7"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                <real key="value" value="1"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
-                                                <color key="value" red="0.64705882349999999" green="0.54117647059999996" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gev-9s-jW7" customClass="CustomTextField" customModule="CoffeeCate" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="58" width="373" height="50"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="cGJ-tS-yWG"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="7"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                <real key="value" value="1"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
-                                                <color key="value" red="0.64705882349999999" green="0.54117647059999996" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mobile" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6TF-wU-57H" customClass="CustomTextField" customModule="CoffeeCate" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="116" width="373" height="50"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="u1O-qe-pUo"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="7"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                <real key="value" value="1"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
-                                                <color key="value" red="0.64705882349999999" green="0.54117647059999996" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="99H-WB-GFd" customClass="CustomTextField" customModule="CoffeeCate" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="174" width="373" height="50"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="9KQ-sl-ZPV"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="7"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                <real key="value" value="1"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
-                                                <color key="value" red="0.64705882349999999" green="0.54117647059999996" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </textField>
-                                </subviews>
-                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="vsT-V4-2n8" firstAttribute="centerX" secondItem="myM-qF-uE9" secondAttribute="centerX" id="0At-4X-Qs0"/>
-                            <constraint firstItem="Kt0-WL-p7O" firstAttribute="centerX" secondItem="myM-qF-uE9" secondAttribute="centerX" id="1aQ-oX-8Mw"/>
-                            <constraint firstItem="8G9-dm-27O" firstAttribute="top" secondItem="KCm-Zl-gjc" secondAttribute="bottom" constant="16" id="7uV-Yl-pnn"/>
-                            <constraint firstItem="Kt0-WL-p7O" firstAttribute="width" secondItem="6ig-iV-nti" secondAttribute="width" id="BKP-mD-Rfk"/>
-                            <constraint firstItem="Kt0-WL-p7O" firstAttribute="top" secondItem="pMF-vp-cxh" secondAttribute="bottom" constant="170" id="E1d-4c-uju"/>
-                            <constraint firstItem="bFi-4i-moS" firstAttribute="centerX" secondItem="myM-qF-uE9" secondAttribute="centerX" id="NLR-c9-UXg"/>
+                            <constraint firstAttribute="bottom" secondItem="RQW-Lo-iPw" secondAttribute="bottom" id="49T-2b-3rB"/>
+                            <constraint firstItem="RQW-Lo-iPw" firstAttribute="leading" secondItem="myM-qF-uE9" secondAttribute="leading" id="Ktd-Qo-Q0t"/>
                             <constraint firstItem="vsT-V4-2n8" firstAttribute="width" secondItem="6ig-iV-nti" secondAttribute="width" id="OHs-rt-s6h"/>
-                            <constraint firstItem="8G9-dm-27O" firstAttribute="centerX" secondItem="myM-qF-uE9" secondAttribute="centerX" id="P90-kF-Bqx"/>
-                            <constraint firstItem="Kt0-WL-p7O" firstAttribute="bottom" secondItem="myM-qF-uE9" secondAttribute="bottom" id="VUh-W4-gL2"/>
+                            <constraint firstAttribute="trailing" secondItem="RQW-Lo-iPw" secondAttribute="trailing" id="Qz5-gr-BMt"/>
                             <constraint firstItem="pMF-vp-cxh" firstAttribute="trailing" secondItem="6ig-iV-nti" secondAttribute="trailing" id="VlZ-gm-uDB"/>
-                            <constraint firstItem="KCm-Zl-gjc" firstAttribute="width" secondItem="6ig-iV-nti" secondAttribute="width" multiplier="0.9" id="afa-bn-q4x"/>
+                            <constraint firstItem="RQW-Lo-iPw" firstAttribute="top" secondItem="vsT-V4-2n8" secondAttribute="bottom" constant="-50" id="ZFf-Fi-XKg"/>
                             <constraint firstItem="pMF-vp-cxh" firstAttribute="leading" secondItem="6ig-iV-nti" secondAttribute="leading" id="elh-qN-wHY"/>
                             <constraint firstItem="pMF-vp-cxh" firstAttribute="top" secondItem="myM-qF-uE9" secondAttribute="top" id="gly-W1-kL7"/>
                             <constraint firstItem="vsT-V4-2n8" firstAttribute="top" secondItem="pMF-vp-cxh" secondAttribute="bottom" id="lT1-XD-9Ni"/>
-                            <constraint firstItem="KCm-Zl-gjc" firstAttribute="centerX" secondItem="myM-qF-uE9" secondAttribute="centerX" id="qFy-bg-iir"/>
-                            <constraint firstItem="KCm-Zl-gjc" firstAttribute="top" secondItem="vsT-V4-2n8" secondAttribute="bottom" constant="100" id="sJf-dM-Owc"/>
-                            <constraint firstItem="bFi-4i-moS" firstAttribute="top" secondItem="Kt0-WL-p7O" secondAttribute="top" constant="-50" id="sRv-3I-MhM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6ig-iV-nti"/>
                     </view>

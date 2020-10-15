@@ -1,0 +1,30 @@
+
+/* Class = "UILabel"; text = "Machine Name"; ObjectID = "44b-jL-CDA"; */
+"44b-jL-CDA.text" = "Machine Name";
+
+/* Class = "UITextField"; placeholder = "Search..."; ObjectID = "6TX-xE-hyA"; */
+"6TX-xE-hyA.placeholder" = "Search...";
+
+/* Class = "UILabel"; text = "3 Min"; ObjectID = "8SG-VN-cpx"; */
+"8SG-VN-cpx.text" = "3 Min";
+
+/* Class = "UITextField"; placeholder = "Search..."; ObjectID = "ONa-Gx-qPz"; */
+"ONa-Gx-qPz.placeholder" = "Search...";
+
+/* Class = "UITextField"; placeholder = "Search..."; ObjectID = "dq2-rT-WXg"; */
+"dq2-rT-WXg.placeholder" = "Search...";
+
+/* Class = "UILabel"; text = "123 Machine address cairo"; ObjectID = "fnA-pu-n4c"; */
+"fnA-pu-n4c.text" = "123 Machine address cairo";
+
+/* Class = "UILabel"; text = "OFF"; ObjectID = "ixQ-PJ-5GR"; */
+"ixQ-PJ-5GR.text" = "OFF";
+
+/* Class = "UILabel"; text = "01125252525"; ObjectID = "l98-0M-PIV"; */
+"l98-0M-PIV.text" = "01125252525";
+
+/* Class = "UILabel"; text = "Most popular"; ObjectID = "lrR-vX-l6N"; */
+"lrR-vX-l6N.text" = "Most popular";
+
+/* Class = "UILabel"; text = "Find your nearest machine"; ObjectID = "yBK-nj-zyf"; */
+"yBK-nj-zyf.text" = "Find your nearest machine";

@@ -62,7 +62,10 @@ class SettingVC: UIViewController {
          MOLH.setLanguageTo(MOLHLanguage.currentAppleLanguage() == "en" ? "ar" : "en")
          UIView.appearance().semanticContentAttribute = .forceLeftToRight
          MOLH.reset()
-         Helper.restartApp()
+         guard let window = UIApplication.shared.keyWindow else { return }
+        let sb = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "HomeNav")
+        window.rootViewController = sb
+        
      } else {
          if ("lang".localized == "en") {
              displayMessage(title: "", message: "Your App is Already in English Language", status: .info, forController: self )
@@ -78,11 +81,13 @@ class SettingVC: UIViewController {
      @IBAction func ArbicLang(_ sender: UIButton) {
         sender.setImage(#imageLiteral(resourceName: "Group 37"), for: .normal)
         self.englishChicBox.setImage(#imageLiteral(resourceName: "Rectangle 11"), for: .normal)
-     if MOLHLanguage.currentAppleLanguage() == "en" {
+           if MOLHLanguage.currentAppleLanguage() == "en" {
                  MOLH.setLanguageTo(MOLHLanguage.currentAppleLanguage() == "en" ? "ar" : "en")
                  MOLH.reset()
-                 Helper.restartApp()
-                 UIView.appearance().semanticContentAttribute = .forceRightToLeft
+            guard let window = UIApplication.shared.keyWindow else { return }
+            let sb = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "HomeNav")
+            window.rootViewController = sb
+            UIView.appearance().semanticContentAttribute = .forceRightToLeft
                  
              } else {
                  if ("lang".localized == "en") {
