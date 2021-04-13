@@ -12,19 +12,18 @@ import UIKit
 import RxSwift
 import RxCocoa
 
+
 let left_min_spacing: CGFloat = 10, center_min_spacing: CGFloat = 5, right_min_spacing: CGFloat = 10, categoryLabelHeight: CGFloat = 30
 
 class HomeVC: UIViewController {
     
     @IBOutlet weak var searchTF: CustomTextField!
     @IBOutlet weak var adsCollectionView: CustomCollectionView!
-    @IBOutlet weak var productCollectionView: CustomCollectionView!
     @IBOutlet weak var machineTableView: UITableView!
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var machineView : UIView!
-    @IBOutlet weak var nearestLabel : UILabel!
-     @IBOutlet weak var productView : UIView!
-    
+    @IBOutlet weak var backButton: UIButton!
+
     
     var homeViewModel = HomeViewModel()
     
@@ -35,14 +34,6 @@ class HomeVC: UIViewController {
                 let count = self.Ads.count
                 self.pageControl.numberOfPages = count
                 self.pageControl.isHidden = !(count > 1)
-            }
-        }
-    }
-    
-    var products = [String]() {
-        didSet {
-            DispatchQueue.main.async {
-                self.homeViewModel.fetchProduct(product: self.products)
             }
         }
     }
@@ -64,17 +55,16 @@ class HomeVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         bindAdsCollectionView()
-        setupProductsCollectionView()
+        bindMshinTableView()
+    
         
-         bindMshinTableView()
-        
-        self.machineView.isHidden = true
-        self.nearestLabel.isHidden = false
-        self.productView.isHidden = false
-        
+        if "lang".localized == "ar" {
+            self.backButton.setImage(#imageLiteral(resourceName: "back (11)-1"), for: .normal)
+        } else {
+           self.backButton.setImage(#imageLiteral(resourceName: "back (11)"), for: .normal)
+        }
     }
     
-
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         self.navigationController?.navigationBar.isHidden = true
@@ -86,20 +76,20 @@ class HomeVC: UIViewController {
        }
     
     @IBAction func machineAction(_ sender: UIBarButtonItem) {
-        self.machineView.isHidden = false
-        self.nearestLabel.isHidden = true
-        self.productView.isHidden = true
-        
+       
     }
+    
     @IBAction func backAction(_ sender: UIBarButtonItem) {
-        self.machineView.isHidden = true
-        self.nearestLabel.isHidden = false
-        self.productView.isHidden = false
+
     }
   
     @IBAction func cartAction(_ sender: UIBarButtonItem) {
-        let main = UIStoryboard(name: "Cart", bundle: nil).instantiateViewController(withIdentifier: "CartVC")
+        //let main = UIStoryboard(name: "Cart", bundle: nil).instantiateViewController(withIdentifier: "CartVC")
+        //self.navigationController?.pushViewController(main, animated: true)
+        
+        let main = UIStoryboard(name: "Menu", bundle: nil).instantiateViewController(withIdentifier: "MenuVC")
         self.navigationController?.pushViewController(main, animated: true)
+        
     }
     
 }
@@ -123,19 +113,6 @@ extension HomeVC: UICollectionViewDelegate {
         
     }//END of Binding AdsCollectionView
     
-    func setupProductsCollectionView() {
-        self.products = ["aaaa","aaaa","aaa","aaa","aaa"]
-        let cellIdentifier = "ProducstCell"
-        self.productCollectionView.rx.setDelegate(self).disposed(by: disposeBag)
-        self.productCollectionView.register(UINib(nibName: cellIdentifier, bundle: nil), forCellWithReuseIdentifier: cellIdentifier)
-        self.homeViewModel.products.bind(to: self.productCollectionView.rx.items(cellIdentifier: cellIdentifier, cellType: ProducstCell.self)) { index, element, cell in
-            cell.config(productImageURL: "", productName: "Coffee",productDetails : "LoremIpsumisimpldummytextotheprintingandtypesettingindustry.")
-        }.disposed(by: disposeBag)
-        self.productCollectionView.rx.itemSelected.bind { (indexPath) in
-            guard let main = UIStoryboard(name: "ProductDetails", bundle: nil).instantiateViewController(withIdentifier: "ProductDetails") as? ProductDetails else { return }
-            self.navigationController?.pushViewController(main, animated: true)
-        }.disposed(by: disposeBag)
-    }
     
 }
 
@@ -162,7 +139,7 @@ extension HomeVC: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
+        return 140
     }
     
     
@@ -193,10 +170,8 @@ extension HomeVC: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if collectionView == adsCollectionView {
             return CGSize(width: collectionView.bounds.width, height: collectionView.bounds.height)
-        }else{
-       let width = (collectionView.bounds.size.width - 20) / 2
-        return CGSize(width: width , height:  width + 20)
-
+        }else {
+            return CGSize(width: collectionView.bounds.width, height: collectionView.bounds.height)
         }
     }
     

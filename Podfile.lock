@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (4.8.2)
+  - FaveButton (3.2.1)
   - ImageSlideshow (1.7.0):
     - ImageSlideshow/Core (= 1.7.0)
   - ImageSlideshow/Core (1.7.0)
@@ -20,6 +21,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (~> 4.8.2)
+  - FaveButton (~> 3.2.1)
   - ImageSlideshow (~> 1.7.0)
   - Kingfisher (~> 5.4.0)
   - MOLH
@@ -33,6 +35,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
+    - FaveButton
     - ImageSlideshow
     - Kingfisher
     - MOLH
@@ -46,6 +49,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  FaveButton: 93cfebf6030336fa7653fad2068c3152ed668b39
   ImageSlideshow: f8eec5e37a980f60923b585ff23b0e140fd24018
   Kingfisher: 9c8f2cc6710334e06f32ba2b45e77707d5e2f0c9
   MOLH: 9ea6c0390f5963b2df9827ae64035fbc8598b092
@@ -57,6 +61,6 @@ SPEC CHECKSUMS:
   SwiftMessages: 8b3cc68dba2f1c91aac1a74c90b10287aac35371
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: ae218b2a60156091154d190482656631bee6929d
+PODFILE CHECKSUM: cadb32f094f68e082e5a31ab6e772ac22df18fa3
 
 COCOAPODS: 1.8.4

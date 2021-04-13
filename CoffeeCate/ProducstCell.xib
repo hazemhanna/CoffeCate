@@ -66,6 +66,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mnD-QG-iot">
                                                 <rect key="frame" x="25" y="0.0" width="17" height="20"/>
                                                 <state key="normal" image="heart (2)"/>
+                                                <connections>
+                                                    <action selector="favouriteAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="9uO-lf-Ldd"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>

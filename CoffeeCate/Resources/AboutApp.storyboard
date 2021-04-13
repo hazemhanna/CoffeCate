@@ -196,6 +196,7 @@
                     <connections>
                         <outlet property="arabic" destination="n4z-5u-plO" id="u8m-7t-r7l"/>
                         <outlet property="arabicChicBox" destination="06y-n3-OEP" id="bQD-44-xe1"/>
+                        <outlet property="backButton" destination="0BH-HM-8ew" id="17f-Jn-UfV"/>
                         <outlet property="english" destination="O4g-Nn-ubx" id="yBo-XB-uEy"/>
                         <outlet property="englishChicBox" destination="Rb2-MI-vTK" id="vli-6P-k9G"/>
                         <outlet property="languageType" destination="elD-eo-503" id="nmm-uC-Qlg"/>
@@ -357,6 +358,7 @@
                     <navigationItem key="navigationItem" title="Supporting" id="8of-eX-vYF"/>
                     <connections>
                         <outlet property="SectionTableViewCell" destination="lOH-nq-76F" id="jjw-UQ-4Sd"/>
+                        <outlet property="backButton" destination="J8Y-bk-A2N" id="IjE-SD-JuC"/>
                         <outlet property="supportLabel" destination="DMS-Ys-5DK" id="9Cv-DY-1bo"/>
                     </connections>
                 </viewController>
@@ -485,6 +487,9 @@
                     <navigationItem key="navigationItem" title="Setting" id="53V-ML-s8G">
                         <barButtonItem key="backBarButtonItem" title=" " id="1i1-VE-nL0"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="backButton" destination="teI-bu-Yed" id="q2V-Pl-MTg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cId-wc-kt2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

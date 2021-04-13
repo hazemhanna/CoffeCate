@@ -135,6 +135,7 @@
                     <navigationItem key="navigationItem" id="4e0-KB-YaJ"/>
                     <connections>
                         <outlet property="NotificationTableView" destination="A2T-qR-iRC" id="2FY-uW-77I"/>
+                        <outlet property="backButton" destination="pnZ-ch-MRx" id="QW6-Y0-d4p"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fml-6L-uzs" sceneMemberID="firstResponder"/>
@@ -160,7 +161,7 @@
                                         </constraints>
                                         <state key="normal" image="menu (6)"/>
                                         <connections>
-                                            <action selector="sideMenuAction:" destination="jGj-LK-7lf" eventType="touchUpInside" id="aCR-el-s5Y"/>
+                                            <action selector="sideMenuAction:" destination="jGj-LK-7lf" eventType="touchUpInside" id="njn-l2-Y4R"/>
                                         </connections>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ONa-Gx-qPz" customClass="CustomTextField" customModule="CoffeeCate" customModuleProvider="target">
@@ -226,7 +227,7 @@
                                     <constraint firstAttribute="trailing" secondItem="m89-9h-Gf5" secondAttribute="trailing" constant="8" id="WLB-lG-64O"/>
                                     <constraint firstAttribute="bottom" secondItem="puy-Hm-Kcs" secondAttribute="bottom" constant="8" id="XLI-WA-qdc"/>
                                     <constraint firstAttribute="bottom" secondItem="ONa-Gx-qPz" secondAttribute="bottom" constant="8" id="fli-41-Czm"/>
-                                    <constraint firstItem="m89-9h-Gf5" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ONa-Gx-qPz" secondAttribute="trailing" symbolic="YES" id="mU6-uR-CLt"/>
+                                    <constraint firstItem="m89-9h-Gf5" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ONa-Gx-qPz" secondAttribute="trailing" constant="8" symbolic="YES" id="mU6-uR-CLt"/>
                                     <constraint firstItem="puy-Hm-Kcs" firstAttribute="leading" secondItem="RcI-hx-U4D" secondAttribute="leading" constant="8" id="mk9-Y9-f21"/>
                                     <constraint firstAttribute="bottom" secondItem="m89-9h-Gf5" secondAttribute="bottom" constant="8" id="rvU-zf-Ghq"/>
                                 </constraints>
@@ -297,25 +298,10 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bmM-sx-MbK" customClass="CustomView" customModule="CoffeeCate" customModuleProvider="target">
-                                                <rect key="frame" x="41.5" y="226" width="331" height="43"/>
+                                                <rect key="frame" x="62" y="226" width="290" height="43"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pin (4)" translatesAutoresizingMaskIntoConstraints="NO" id="oC3-DW-6LZ">
-                                                        <rect key="frame" x="42" y="11.5" width="20" height="20"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="20" id="PYP-7C-ben"/>
-                                                            <constraint firstAttribute="width" constant="20" id="mUc-jf-QTp"/>
-                                                        </constraints>
-                                                    </imageView>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y0Y-vR-P8T">
-                                                        <rect key="frame" x="0.0" y="0.0" width="331" height="43"/>
-                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                                        <connections>
-                                                            <action selector="machineAction:" destination="jGj-LK-7lf" eventType="touchUpInside" id="iIS-EV-Ckm"/>
-                                                        </connections>
-                                                    </button>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find your nearest machine" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yBK-nj-zyf">
-                                                        <rect key="frame" x="70" y="13.5" width="191" height="16"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" your nearest machine" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yBK-nj-zyf">
+                                                        <rect key="frame" x="65.5" y="13.5" width="159.5" height="16"/>
                                                         <fontDescription key="fontDescription" name="JosefinSans-Regular" family="Josefin Sans" pointSize="16"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -323,15 +309,9 @@
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.64705882349999999" green="0.54117647059999996" blue="0.36862745099999999" alpha="0.78000000000000003" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                 <constraints>
-                                                    <constraint firstItem="Y0Y-vR-P8T" firstAttribute="centerX" secondItem="bmM-sx-MbK" secondAttribute="centerX" id="1du-DQ-sKt"/>
-                                                    <constraint firstItem="Y0Y-vR-P8T" firstAttribute="height" secondItem="bmM-sx-MbK" secondAttribute="height" id="36K-WE-H10"/>
-                                                    <constraint firstItem="Y0Y-vR-P8T" firstAttribute="width" secondItem="bmM-sx-MbK" secondAttribute="width" id="78p-H4-wae"/>
                                                     <constraint firstItem="yBK-nj-zyf" firstAttribute="centerX" secondItem="bmM-sx-MbK" secondAttribute="centerX" id="7Ne-eI-HRL"/>
                                                     <constraint firstAttribute="height" constant="43" id="DbU-82-KDf"/>
-                                                    <constraint firstItem="oC3-DW-6LZ" firstAttribute="centerY" secondItem="bmM-sx-MbK" secondAttribute="centerY" id="QTl-8f-Fet"/>
-                                                    <constraint firstItem="yBK-nj-zyf" firstAttribute="leading" secondItem="oC3-DW-6LZ" secondAttribute="trailing" constant="8" id="Xzf-Ur-tau"/>
                                                     <constraint firstItem="yBK-nj-zyf" firstAttribute="centerY" secondItem="bmM-sx-MbK" secondAttribute="centerY" id="eHg-kG-pfn"/>
-                                                    <constraint firstItem="Y0Y-vR-P8T" firstAttribute="centerY" secondItem="bmM-sx-MbK" secondAttribute="centerY" id="fpT-dc-MKU"/>
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -358,48 +338,13 @@
                                                             <constraint firstItem="QRL-fp-LpS" firstAttribute="top" secondItem="VM6-aL-C5e" secondAttribute="top" id="wUd-xk-CXp"/>
                                                         </constraints>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Qa-aX-D9A">
-                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="715"/>
-                                                        <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Most popular" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lrR-vX-l6N">
-                                                                <rect key="frame" x="16" y="0.0" width="132" height="28"/>
-                                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="20"/>
-                                                                <nil key="textColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="q7K-cn-sFE" customClass="CustomCollectionView" customModule="CoffeeCate" customModuleProvider="target">
-                                                                <rect key="frame" x="20" y="44" width="374" height="671"/>
-                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="l34-mZ-oxn">
-                                                                    <size key="itemSize" width="50" height="50"/>
-                                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                                </collectionViewFlowLayout>
-                                                                <cells/>
-                                                            </collectionView>
-                                                        </subviews>
-                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="trailing" secondItem="q7K-cn-sFE" secondAttribute="trailing" constant="20" id="4aM-QL-xce"/>
-                                                            <constraint firstItem="lrR-vX-l6N" firstAttribute="top" secondItem="3Qa-aX-D9A" secondAttribute="top" id="Fs1-vz-qj0"/>
-                                                            <constraint firstAttribute="bottom" secondItem="q7K-cn-sFE" secondAttribute="bottom" id="djN-04-SDU"/>
-                                                            <constraint firstItem="q7K-cn-sFE" firstAttribute="top" secondItem="lrR-vX-l6N" secondAttribute="bottom" constant="16" id="dkU-ob-MNI"/>
-                                                            <constraint firstItem="q7K-cn-sFE" firstAttribute="leading" secondItem="3Qa-aX-D9A" secondAttribute="leading" constant="20" id="gU2-0H-S1I"/>
-                                                            <constraint firstItem="lrR-vX-l6N" firstAttribute="leading" secondItem="3Qa-aX-D9A" secondAttribute="leading" constant="16" id="tgT-gN-2wc"/>
-                                                        </constraints>
-                                                    </view>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="trailing" secondItem="3Qa-aX-D9A" secondAttribute="trailing" id="AAT-BX-4sY"/>
                                                     <constraint firstItem="VM6-aL-C5e" firstAttribute="top" secondItem="xiU-6D-3B2" secondAttribute="top" id="GgS-XF-gdS"/>
-                                                    <constraint firstAttribute="bottom" secondItem="3Qa-aX-D9A" secondAttribute="bottom" id="OSe-Rj-2uT"/>
                                                     <constraint firstAttribute="bottom" secondItem="VM6-aL-C5e" secondAttribute="bottom" id="PeQ-wn-mAi"/>
-                                                    <constraint firstItem="3Qa-aX-D9A" firstAttribute="leading" secondItem="xiU-6D-3B2" secondAttribute="leading" id="S1c-eN-GId"/>
                                                     <constraint firstItem="VM6-aL-C5e" firstAttribute="leading" secondItem="xiU-6D-3B2" secondAttribute="leading" id="VcA-iI-1d8"/>
                                                     <constraint firstAttribute="trailing" secondItem="VM6-aL-C5e" secondAttribute="trailing" id="lrA-6d-Cdt"/>
-                                                    <constraint firstItem="3Qa-aX-D9A" firstAttribute="top" secondItem="xiU-6D-3B2" secondAttribute="top" id="ySh-Nr-drz"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -413,7 +358,7 @@
                                             <constraint firstAttribute="trailing" secondItem="cz8-ou-K9u" secondAttribute="trailing" id="UFu-RE-h1j"/>
                                             <constraint firstItem="bmM-sx-MbK" firstAttribute="top" secondItem="cz8-ou-K9u" secondAttribute="bottom" constant="16" id="Vc7-dH-HaF"/>
                                             <constraint firstItem="0og-HX-mfh" firstAttribute="centerX" secondItem="oIm-BU-GUC" secondAttribute="centerX" id="Wgl-4x-0gL"/>
-                                            <constraint firstItem="bmM-sx-MbK" firstAttribute="width" secondItem="oIm-BU-GUC" secondAttribute="width" multiplier="0.8" id="cBm-gz-VEl"/>
+                                            <constraint firstItem="bmM-sx-MbK" firstAttribute="width" secondItem="oIm-BU-GUC" secondAttribute="width" multiplier="0.7" id="cBm-gz-VEl"/>
                                             <constraint firstItem="0og-HX-mfh" firstAttribute="height" secondItem="oIm-BU-GUC" secondAttribute="height" id="dfF-mO-1Qm"/>
                                             <constraint firstAttribute="trailing" secondItem="xiU-6D-3B2" secondAttribute="trailing" id="dwI-gx-W4y"/>
                                             <constraint firstItem="cz8-ou-K9u" firstAttribute="height" secondItem="oIm-BU-GUC" secondAttribute="height" multiplier="0.2" id="eQS-EW-lzk"/>
@@ -448,12 +393,10 @@
                     <navigationItem key="navigationItem" id="Yh4-mk-wlH"/>
                     <connections>
                         <outlet property="adsCollectionView" destination="Cp7-iD-GEq" id="hCI-11-Dki"/>
+                        <outlet property="backButton" destination="oeb-1A-DcU" id="qtb-0H-ITU"/>
                         <outlet property="machineTableView" destination="QRL-fp-LpS" id="Coa-OV-UJc"/>
                         <outlet property="machineView" destination="VM6-aL-C5e" id="Thu-YC-J04"/>
-                        <outlet property="nearestLabel" destination="lrR-vX-l6N" id="IWA-89-k0G"/>
                         <outlet property="pageControl" destination="EEW-o5-kcU" id="TQe-6j-EqK"/>
-                        <outlet property="productCollectionView" destination="q7K-cn-sFE" id="5Vi-SS-ylG"/>
-                        <outlet property="productView" destination="3Qa-aX-D9A" id="s1B-rG-Tg7"/>
                         <outlet property="searchTF" destination="ONa-Gx-qPz" id="f6g-Sy-6DL"/>
                     </connections>
                 </viewController>
@@ -754,6 +697,7 @@
                     <navigationItem key="navigationItem" id="TMl-xm-FiJ"/>
                     <connections>
                         <outlet property="adsCollectionView" destination="CwP-h9-PfW" id="P1v-bL-lMF"/>
+                        <outlet property="backButton" destination="xUX-yu-RdD" id="bG8-7u-WbQ"/>
                         <outlet property="pageControl" destination="KFk-dJ-XMp" id="Xjn-TO-FuE"/>
                         <outlet property="productCollectionView" destination="Nux-OU-Ohl" id="OSm-rv-OF6"/>
                         <outlet property="searchTF" destination="dq2-rT-WXg" id="ieA-3A-2Fi"/>
@@ -787,7 +731,6 @@
         <image name="Group 330" width="94" height="98"/>
         <image name="back (11)" width="20" height="20"/>
         <image name="menu (6)" width="20" height="25"/>
-        <image name="pin (4)" width="20" height="20"/>
         <image name="shopping-cart (1)" width="20" height="20"/>
     </resources>
 </document>

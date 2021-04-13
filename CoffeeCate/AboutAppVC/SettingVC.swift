@@ -18,7 +18,8 @@ class SettingVC: UIViewController {
     @IBOutlet weak var english: UIButton!
     @IBOutlet weak var arabicChicBox: UIButton!
     @IBOutlet weak var englishChicBox: UIButton!
-    
+    @IBOutlet weak var backButton: UIButton!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         if "lang".localized == "ar" {
@@ -29,6 +30,8 @@ class SettingVC: UIViewController {
             self.arabic.contentHorizontalAlignment = .right
             self.english.setTitle("اللغة الإنجليزية", for: .normal)
             self.english.contentHorizontalAlignment = .right
+            self.backButton.setImage(#imageLiteral(resourceName: "back (11)-1"), for: .normal)
+
         } else {
             self.englishChicBox.setImage(#imageLiteral(resourceName: "Group 37"), for: .normal)
             self.languageType.setTitle("change the Language", for: .normal)
@@ -37,6 +40,8 @@ class SettingVC: UIViewController {
             self.arabic.contentHorizontalAlignment = .left
             self.english.setTitle("English", for: .normal)
             self.english.contentHorizontalAlignment = .left
+            self.backButton.setImage(#imageLiteral(resourceName: "back (11)"), for: .normal)
+
         }
 
     }

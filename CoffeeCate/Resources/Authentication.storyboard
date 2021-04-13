@@ -581,7 +581,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="832"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6J7-Xz-phd">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="700"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cjf-Wb-1jf">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
@@ -707,7 +707,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hBw-dP-33A" customClass="CustomButtons" customModule="CoffeeCate" customModuleProvider="target">
-                                                <rect key="frame" x="103.5" y="610" width="207" height="50"/>
+                                                <rect key="frame" x="103.5" y="514" width="207" height="50"/>
                                                 <color key="backgroundColor" red="0.64705882349999999" green="0.54117647059999996" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="E5d-5i-Dg3"/>
@@ -737,15 +737,15 @@
                                             <constraint firstItem="fv2-no-BBA" firstAttribute="top" secondItem="Zhp-se-g39" secondAttribute="bottom" constant="30" id="Mu3-4B-atX"/>
                                             <constraint firstItem="fv2-no-BBA" firstAttribute="centerX" secondItem="6J7-Xz-phd" secondAttribute="centerX" id="O3c-ql-zYq"/>
                                             <constraint firstItem="Zhp-se-g39" firstAttribute="centerX" secondItem="Ci2-6t-TRg" secondAttribute="centerX" id="YIr-9z-pLv"/>
-                                            <constraint firstAttribute="bottom" secondItem="hBw-dP-33A" secondAttribute="bottom" constant="40" id="djc-Tm-ZnD"/>
                                             <constraint firstItem="fv2-no-BBA" firstAttribute="width" secondItem="6J7-Xz-phd" secondAttribute="width" multiplier="0.9" id="gYm-Br-pEG"/>
                                             <constraint firstItem="cjf-Wb-1jf" firstAttribute="centerX" secondItem="6J7-Xz-phd" secondAttribute="centerX" id="iB2-5Y-pU8"/>
                                             <constraint firstItem="Ci2-6t-TRg" firstAttribute="top" secondItem="cjf-Wb-1jf" secondAttribute="bottom" id="ijc-5P-nCJ"/>
-                                            <constraint firstAttribute="height" constant="700" id="nHd-ja-G4h"/>
+                                            <constraint firstAttribute="height" constant="800" id="nHd-ja-G4h"/>
                                             <constraint firstItem="cjf-Wb-1jf" firstAttribute="width" secondItem="6J7-Xz-phd" secondAttribute="width" id="scF-iE-fgx"/>
                                             <constraint firstItem="hBw-dP-33A" firstAttribute="centerX" secondItem="6J7-Xz-phd" secondAttribute="centerX" id="v9x-3d-Y0J"/>
                                             <constraint firstItem="cjf-Wb-1jf" firstAttribute="top" secondItem="6J7-Xz-phd" secondAttribute="top" id="vKF-FZ-RvO"/>
                                             <constraint firstItem="Aqf-tu-kU4" firstAttribute="centerX" secondItem="fv2-no-BBA" secondAttribute="centerX" id="vxM-xf-5LW"/>
+                                            <constraint firstItem="hBw-dP-33A" firstAttribute="top" secondItem="Aqf-tu-kU4" secondAttribute="bottom" constant="40" id="woc-a5-4Pa"/>
                                             <constraint firstItem="Ci2-6t-TRg" firstAttribute="width" secondItem="6J7-Xz-phd" secondAttribute="width" multiplier="0.9" id="ws3-ct-pzC"/>
                                         </constraints>
                                     </view>
@@ -780,7 +780,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="12u-4L-h54" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2896" y="23"/>
+            <point key="canvasLocation" x="2852" y="23"/>
         </scene>
         <!--Update PasswordVC-->
         <scene sceneID="qYR-kK-Dyq">
@@ -969,7 +969,7 @@
                                     <constraint firstItem="JPI-oq-4PW" firstAttribute="width" secondItem="pMF-vp-cxh" secondAttribute="width" multiplier="0.65" id="87O-Fr-GLJ"/>
                                     <constraint firstAttribute="height" constant="75" id="AU2-Ny-7BT"/>
                                     <constraint firstAttribute="bottom" secondItem="ruX-MR-d1i" secondAttribute="bottom" constant="8" id="IHV-WM-D0j"/>
-                                    <constraint firstItem="OaU-jP-zkV" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="JPI-oq-4PW" secondAttribute="trailing" symbolic="YES" id="S0m-XA-FKd"/>
+                                    <constraint firstItem="OaU-jP-zkV" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="JPI-oq-4PW" secondAttribute="trailing" constant="8" symbolic="YES" id="S0m-XA-FKd"/>
                                     <constraint firstItem="JPI-oq-4PW" firstAttribute="leading" secondItem="ruX-MR-d1i" secondAttribute="trailing" constant="8" symbolic="YES" id="Ugs-WQ-goe"/>
                                     <constraint firstAttribute="bottom" secondItem="JPI-oq-4PW" secondAttribute="bottom" constant="8" id="VVg-6c-lQ0"/>
                                     <constraint firstAttribute="bottom" secondItem="OaU-jP-zkV" secondAttribute="bottom" constant="8" id="qFv-Hn-ZL1"/>
@@ -1171,6 +1171,7 @@
                     <navigationItem key="navigationItem" id="rkV-mB-sRC"/>
                     <connections>
                         <outlet property="CustomerProfileImageView" destination="mja-Tq-w0L" id="QGD-4g-95d"/>
+                        <outlet property="backButton" destination="Foy-xB-08E" id="Z91-1k-qA2"/>
                         <outlet property="backroundImageView" destination="Kt0-WL-p7O" id="0h8-U5-RPH"/>
                     </connections>
                 </viewController>

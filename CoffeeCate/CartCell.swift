@@ -19,9 +19,9 @@ class CartCell: UITableViewCell {
     @IBOutlet weak var PriceLabel: UILabel!
     @IBOutlet weak var deleteButton: UIButton!
     @IBOutlet weak var ContentView: UIView!
-
     
-    
+    @IBOutlet weak var increaseButton: UIButton!
+    @IBOutlet weak var decreaseButton: UIButton!
     
     var increaseQuantity: (() -> Void)? = nil
     var decreaseQuantity: (() -> Void)? = nil

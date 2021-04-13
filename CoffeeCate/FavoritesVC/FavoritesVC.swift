@@ -14,7 +14,8 @@ import RxCocoa
 class FavoritesVC: UIViewController {
 
     @IBOutlet weak var productCollectionView : CustomCollectionView!
-    
+    @IBOutlet weak var backButton: UIButton!
+
     private let favoriteProductCell = "FavoriteCell"
     var favoritesViewModel = FavoritesViewModel()
     var favoriteProducts = [String]() {
@@ -31,6 +32,14 @@ class FavoritesVC: UIViewController {
         super.viewDidLoad()
         BindFavoritesCollectionView()
         getFavorites()
+        
+        
+               if "lang".localized == "ar" {
+                              self.backButton.setImage(#imageLiteral(resourceName: "back (11)-1"), for: .normal)
+                          } else {
+                             self.backButton.setImage(#imageLiteral(resourceName: "back (11)"), for: .normal)
+                          }
+        
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)

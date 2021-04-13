@@ -24,22 +24,19 @@ class OrderCell : UITableViewCell {
     
     
     
-    var increaseQuantity: (() -> Void)? = nil
-    var decreaseQuantity: (() -> Void)? = nil
-    var deleteActiion: (() -> Void)? = nil
+    var buyAgain : (() -> Void)? = nil
+
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
    
         productImageView.clipsToBounds = true
         productImageView.layer.cornerRadius = 10
         productImageView.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
-        
         ContentView.layer.borderWidth = 2
         ContentView.layer.borderColor = UIColor.rgb(228, green: 218, blue: 202).cgColor
         ContentView.layer.cornerRadius = 10.0
-
-
-        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -56,15 +53,11 @@ class OrderCell : UITableViewCell {
         self.counterLabel.text = ProductCount
     
     }
-    @IBAction func decreaseAction(_ sender: UIButton) {
-        decreaseQuantity?()
+    @IBAction func buyAgainAction(_ sender: UIButton) {
+        buyAgain?()
     }
-    @IBAction func increaseAction(_ sender: UIButton) {
-        increaseQuantity?()
-    }
-    @IBAction func DeleteAction(_ sender: UIButton) {
-        deleteActiion?()
-    }
+   
+    
     
 }
 

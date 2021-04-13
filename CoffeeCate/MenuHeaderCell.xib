@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Light.ttf">
+            <string>Poppins-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HeaderCell" rowHeight="99" id="KGk-i7-Jjw" customClass="MenuHeaderCell" customModule="CoffeeCate" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="364" height="99"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="364" height="99"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KJ8-JN-DOM" customClass="CustomView" customModule="CoffeeCate" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="1" width="364" height="97"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ytd-C8-VlK">
+                                <rect key="frame" x="3.5" y="0.0" width="357" height="97"/>
+                                <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="17"/>
+                                <color key="textColor" red="0.074509803920000006" green="0.1450980392" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Ytd-C8-VlK" firstAttribute="centerX" secondItem="KJ8-JN-DOM" secondAttribute="centerX" id="MT0-gx-67k"/>
+                            <constraint firstItem="Ytd-C8-VlK" firstAttribute="width" secondItem="KJ8-JN-DOM" secondAttribute="width" multiplier="0.98" id="UVd-Vh-nsj"/>
+                            <constraint firstItem="Ytd-C8-VlK" firstAttribute="height" secondItem="KJ8-JN-DOM" secondAttribute="height" id="lZH-DG-pBg"/>
+                            <constraint firstItem="Ytd-C8-VlK" firstAttribute="centerY" secondItem="KJ8-JN-DOM" secondAttribute="centerY" id="w10-Pn-Wye"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="KJ8-JN-DOM" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="2lm-eQ-YPr"/>
+                    <constraint firstItem="KJ8-JN-DOM" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" id="6nd-vh-vLM"/>
+                    <constraint firstItem="KJ8-JN-DOM" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ls1-ne-Rtk"/>
+                    <constraint firstItem="KJ8-JN-DOM" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.977273" id="vEe-qJ-FB4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="ContentHeaderLabel" destination="Ytd-C8-VlK" id="vKm-mv-E4i"/>
+            </connections>
+            <point key="canvasLocation" x="35" y="69"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -57,6 +57,9 @@
                                                         <real key="value" value="10"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="buyAgainAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="AUL-mx-j9k"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>

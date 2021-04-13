@@ -17,7 +17,7 @@ target 'CoffeeCate' do
     pod 'SVProgressHUD', '~> 2.2.5'
     pod 'ImageSlideshow', '~> 1.7.0'
     pod 'MOLH'
-    
+    pod 'FaveButton', '~> 3.2.1'    
   target 'CoffeeCateTests' do
     inherit! :search_paths
     # Pods for testing

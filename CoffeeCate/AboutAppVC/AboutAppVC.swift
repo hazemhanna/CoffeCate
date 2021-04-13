@@ -26,6 +26,13 @@ class AboutAppVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.getAboutApp()
+        
+        
+               if "lang".localized == "ar" {
+                              self.backButton.setImage(#imageLiteral(resourceName: "back (11)-1"), for: .normal)
+                          } else {
+                             self.backButton.setImage(#imageLiteral(resourceName: "back (11)"), for: .normal)
+                          }
     
     }
     

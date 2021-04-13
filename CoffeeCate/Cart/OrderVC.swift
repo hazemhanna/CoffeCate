@@ -15,9 +15,9 @@ import RxCocoa
 class OrderVC: UIViewController {
 
     @IBOutlet weak var cartTableView: UITableView!
-    @IBOutlet weak var tableViewHeight: NSLayoutConstraint!
-    
-    @IBOutlet weak var backButton: UIBarButtonItem!
+    @IBOutlet weak var tableViewHeight: NSLayoutConstraint!    
+    @IBOutlet weak var backButton: UIButton!
+
     private let CartCellIdentifier = "OrderCell"
     var disposeBag = DisposeBag()
     var CartVM = CartViewModel()
@@ -32,17 +32,19 @@ class OrderVC: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         bindCartTableView()
-        
+        if "lang".localized == "ar" {
+            self.backButton.setImage(#imageLiteral(resourceName: "back (11)-1"), for: .normal)
+        } else {
+            self.backButton.setImage(#imageLiteral(resourceName: "back (11)"), for: .normal)
+        }
     }
-
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
             self.getCartList()
     }
-
     
-       @IBAction func sideMenuAction(_ sender: UIBarButtonItem) {
+    @IBAction func sideMenuAction(_ sender: UIBarButtonItem) {
            self.setupSideMenu()
        }
        @IBAction func backAction(_ sender: UIBarButtonItem) {
@@ -53,18 +55,19 @@ class OrderVC: UIViewController {
            let main = UIStoryboard(name: "Cart", bundle: nil).instantiateViewController(withIdentifier: "CartVC")
            self.navigationController?.pushViewController(main, animated: true)
        }
-    
-
 }
 
 extension OrderVC: UITableViewDelegate {
-    
     func bindCartTableView() {
         self.items = ["aa","aa"]
         cartTableView.rx.setDelegate(self).disposed(by: disposeBag)
         cartTableView.register(UINib(nibName: CartCellIdentifier, bundle: nil), forCellReuseIdentifier: CartCellIdentifier)
         CartVM.itemList.bind(to: cartTableView.rx.items(cellIdentifier: CartCellIdentifier, cellType: OrderCell.self)) { index, element, cell in
           //  cell.config(ProductImageURL: "", ProductName:  "asd", ProductCount: 0, oldPrice: product.price ?? 0.0, newPrice: discountedPrice, discountPercentage: productOffer.discount ?? 0.0, currency: Helper.getCurrentCurrency() ?? "", shipping: "FREE SHIPPING")
+            cell.buyAgain = {
+            guard let main = UIStoryboard(name: "Cart", bundle: nil).instantiateViewController(withIdentifier: "OrderDetailsVC") as? OrderDetailsVC else { return }
+                self.navigationController?.pushViewController(main, animated: true)
+            }
             
         }.disposed(by: disposeBag)
 //        cartTableView.rx.itemSelected.bind { (indexPath) in

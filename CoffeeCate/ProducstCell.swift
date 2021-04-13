@@ -9,6 +9,7 @@
 
 
 import UIKit
+import FaveButton
 
 class ProducstCell: UICollectionViewCell {
 
@@ -17,6 +18,8 @@ class ProducstCell: UICollectionViewCell {
     @IBOutlet weak var productDetailsLabel: UILabel!
     @IBOutlet weak var ContentView: UIView!
     @IBOutlet weak var favouriteBtn : UIButton!
+    
+    var favourite : (() -> Void)? = nil
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -41,4 +44,19 @@ class ProducstCell: UICollectionViewCell {
          self.productNameLabel.text = productName
          self.productDetailsLabel.text = productDetails
     }
+    
+    var isfavourite = false
+    
+    @IBAction func favouriteAction(_ sender: UIButton) {
+         favourite?()
+        if isfavourite == false{
+            self.favouriteBtn.setImage(#imageLiteral(resourceName: "heart (4)"), for: .normal)
+            isfavourite = true
+              } else {
+            self.favouriteBtn.setImage(#imageLiteral(resourceName: "heart (2)"), for: .normal)
+            isfavourite = false
+        }
+     }
+    
+    
 }

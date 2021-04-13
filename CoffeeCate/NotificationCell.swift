@@ -15,9 +15,7 @@ class NotificationCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
         
-        ContentView.layer.borderWidth = 2
-        ContentView.layer.borderColor = UIColor.rgb(228, green: 218, blue: 202).cgColor
-        ContentView.layer.cornerRadius = 10.0
+     
 //        ContentView.layer.masksToBounds = true
 //        ContentView.layer.shadowColor = UIColor.backgroundColor.cgColor
 //        ContentView.layer.shadowOffset = CGSize(width: 0, height: 0)

@@ -19,7 +19,8 @@ class MachineDetailsVC : UIViewController {
     @IBOutlet weak var adsCollectionView: CustomCollectionView!
     @IBOutlet weak var productCollectionView: CustomCollectionView!
     @IBOutlet weak var pageControl: UIPageControl!
-    
+    @IBOutlet weak var backButton: UIButton!
+
     
     var homeViewModel = HomeViewModel()
     
@@ -49,6 +50,15 @@ class MachineDetailsVC : UIViewController {
         super.viewDidLoad()
         bindAdsCollectionView()
         setupProductsCollectionView()
+        
+        
+        
+               if "lang".localized == "ar" {
+                              self.backButton.setImage(#imageLiteral(resourceName: "back (11)-1"), for: .normal)
+                          } else {
+                             self.backButton.setImage(#imageLiteral(resourceName: "back (11)"), for: .normal)
+                          }
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {

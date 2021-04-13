@@ -406,6 +406,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Uzz-0L-q2c"/>
                     <connections>
+                        <outlet property="backButton" destination="0vB-T9-3ll" id="E9O-JO-4ki"/>
                         <outlet property="productImageView" destination="7gO-o5-B8x" id="Pv5-fe-24U"/>
                         <outlet property="searchTF" destination="MqC-tq-B76" id="dd7-bf-lYg"/>
                     </connections>

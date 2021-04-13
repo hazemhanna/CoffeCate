@@ -53,21 +53,21 @@ class RegistrationVC: UIViewController {
             self.skipButton.imageEdgeInsets = UIEdgeInsets(top: 0, left: (self.skipButton.frame.width - 20), bottom: 0, right: 0)
         }
 
-        
+        let endEditting = UITapGestureRecognizer(target: self, action:#selector(LoginVC.endEditting(sender:)))
+        view.addGestureRecognizer(endEditting)
 
       }
 
+    @objc func endEditting(sender: UITapGestureRecognizer) {
+             self.view.endEditing(true)
+         }
     
     func bindingData() {
-           let endEditting = UITapGestureRecognizer(target: self, action:#selector(LoginVC.endEditting(sender:)))
-            view.addGestureRecognizer(endEditting)
+      
             
         }
 
-        
-        @objc func endEditting(sender: UITapGestureRecognizer) {
-            self.view.endEditing(true)
-        }
+     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         self.navigationController?.navigationBar.isHidden = true

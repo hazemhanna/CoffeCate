@@ -34,7 +34,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="143" height="158"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cappuccino" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QLH-jg-PVH">
-                                        <rect key="frame" x="159" y="8" width="109" height="23.5"/>
+                                        <rect key="frame" x="159" y="8" width="125" height="28"/>
                                         <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -46,15 +46,18 @@
                                             <constraint firstAttribute="height" constant="25" id="uU1-qX-ES9"/>
                                         </constraints>
                                         <state key="normal" image="cancel (1)"/>
+                                        <connections>
+                                            <action selector="DeleteAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="mih-kc-k5Z"/>
+                                        </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="TYv-OQ-Th8">
-                                        <rect key="frame" x="159" y="39.5" width="93" height="59"/>
+                                        <rect key="frame" x="159" y="44" width="93" height="60"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="bIG-03-Cg2">
-                                                <rect key="frame" x="0.0" y="0.0" width="93" height="25"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="93" height="25.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Size" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a6Z-qX-gaX">
-                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="21"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="25.5"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="50" id="4Kc-BI-nCV"/>
                                                         </constraints>
@@ -73,10 +76,10 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="6Ij-v3-AQt">
-                                                <rect key="frame" x="0.0" y="34" width="93" height="25"/>
+                                                <rect key="frame" x="0.0" y="34.5" width="93" height="25.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sugar" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PuZ-bS-RFZ">
-                                                        <rect key="frame" x="0.0" y="0.0" width="57" height="21"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="57" height="25.5"/>
                                                         <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="18"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -111,6 +114,9 @@
                                                         <color key="value" red="0.14117647059999999" green="0.074509803920000006" blue="0.043137254899999998" alpha="1" colorSpace="calibratedRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="increaseAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="CYr-pm-SkY"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z65-SP-D9h">
                                                 <rect key="frame" x="5.5" y="25" width="9.5" height="20"/>
@@ -134,6 +140,9 @@
                                                         <real key="value" value="2"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="decreaseAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="mcx-49-MwJ"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -192,7 +201,13 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="ContentView" destination="H1Y-1f-g9h" id="FZ2-5g-Xk0"/>
+                <outlet property="PriceLabel" destination="Khg-QB-Krn" id="KKa-Yo-CBa"/>
+                <outlet property="counterLabel" destination="Z65-SP-D9h" id="ztN-xc-hd6"/>
+                <outlet property="decreaseButton" destination="0II-5q-PQa" id="Yip-Ri-pg5"/>
+                <outlet property="deleteButton" destination="0Mg-5M-rxP" id="wzv-DW-KDh"/>
+                <outlet property="increaseButton" destination="yCN-tT-kkM" id="AIK-rt-UTB"/>
                 <outlet property="productImageView" destination="IfQ-OH-2aZ" id="4qj-j1-JJT"/>
+                <outlet property="productNameLabel" destination="QLH-jg-PVH" id="oS4-FC-aef"/>
             </connections>
             <point key="canvasLocation" x="64.492753623188406" y="145.3125"/>
         </tableViewCell>

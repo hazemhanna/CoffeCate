@@ -21,7 +21,8 @@ class CustomerEDITProfileVC: UIViewController {
     @IBOutlet weak var emailTF: CustomTextField!
     @IBOutlet weak var mobileTF: CustomTextField!
     @IBOutlet weak var CustomerNameTF: CustomTextField!
-    
+    @IBOutlet weak var backButton: UIButton!
+
     var disposeBag = DisposeBag()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +30,13 @@ class CustomerEDITProfileVC: UIViewController {
         backroundImageView.layer.cornerRadius = 20
         backroundImageView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
     
+        
+        if "lang".localized == "ar" {
+                  self.backButton.setImage(#imageLiteral(resourceName: "back (11)-1"), for: .normal)
+              } else {
+                 self.backButton.setImage(#imageLiteral(resourceName: "back (11)"), for: .normal)
+              }
+        
     }
     
     

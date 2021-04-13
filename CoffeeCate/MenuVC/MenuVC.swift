@@ -21,8 +21,14 @@ import RxSwift
 import RxCocoa
 
 class MenuVC: UIViewController {
-    @IBOutlet weak var productCollectionView : CustomCollectionView!
+   
+    @IBOutlet weak var productTableView : UITableView!
     var favoritesViewModel = FavoritesViewModel()
+    @IBOutlet weak var backButton: UIButton!
+    let cellIdentifier = "MenuCell"
+    let headerCellIdentifier = "HeaderMenuCell"
+    
+   var  headers = [String]()
     var menuProducts = [String]() {
         didSet {
             DispatchQueue.main.async {
@@ -35,12 +41,17 @@ class MenuVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        BinMenuProductsCollectionView()
+        setupProductTableView()
+        if "lang".localized == "ar" {
+            self.backButton.setImage(#imageLiteral(resourceName: "back (11)-1"), for: .normal)
+        } else {
+            self.backButton.setImage(#imageLiteral(resourceName: "back (11)"), for: .normal)
+        }
+        
     }
    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-        self.getCart()
     }
     
     @IBAction func sideMenuAction(_ sender: UIBarButtonItem) {
@@ -56,48 +67,51 @@ class MenuVC: UIViewController {
       self.navigationController?.pushViewController(main, animated: true)
         
     }
-    
-    
 }
 
-//MARK:- Favorites TableView
-extension MenuVC: UITableViewDelegate {
-   func BinMenuProductsCollectionView(){
-        self.menuProducts = ["aaaa","aaaa","aaa","aaa","aaa","aaa","aaa","aaa","aaa","aaa","aaa","aaa","aaa"]
-        let cellIdentifier = "ProducstCell"
-        self.productCollectionView.rx.setDelegate(self).disposed(by: disposeBag)
-        self.productCollectionView.register(UINib(nibName: cellIdentifier, bundle: nil), forCellWithReuseIdentifier: cellIdentifier)
-        self.favoritesViewModel.menuProducts.bind(to: self.productCollectionView.rx.items(cellIdentifier: cellIdentifier, cellType: ProducstCell.self)) { index, element, cell in
-            cell.config(productImageURL: "", productName: "Coffee",productDetails : "LoremIpsumisimpldummytextotheprintingandtypesettingindustry.")
 
-            
-        }.disposed(by: disposeBag)
-        self.productCollectionView.rx.itemSelected.bind { (indexPath) in
-            //               guard let main = UIStoryboard(name: "Courses", bundle: nil).instantiateViewController(withIdentifier: "CoursesVC") as? CoursesVC else { return }
-            //               main.category_id = self.Categories[indexPath.row].id ?? 0
-            //               main.categoryName = self.Categories[indexPath.row].name ?? ""
-            //               main.type = "category"
-            //               self.navigationController?.pushViewController(main, animated: true)
-        }.disposed(by: disposeBag)
+extension MenuVC: UITableViewDelegate, UITableViewDataSource {
+    func setupProductTableView() {
+        self.headers = ["Hot Coffe","Ice Coffe","Espreso","Chocloate Coffee"]
+        self.productTableView.delegate = self
+        self.productTableView.dataSource = self
+        self.productTableView.register(UINib(nibName: cellIdentifier, bundle: nil), forCellReuseIdentifier: cellIdentifier)
+        self.productTableView.register(UINib(nibName: headerCellIdentifier, bundle: nil), forCellReuseIdentifier: headerCellIdentifier)
+       
     }
-}
-
-//MARK:- Retrieving Data
-extension MenuVC {
-    func getFavorites() {}
-    func postAddOrRemoveFromFavorite(item_id: Int, item_type: String) {}
-    func AddToCart(product_id: Int, quantity: Int) {}
-    func RemoveFromCart(product_id: Int, quantity: Int) {}
-    func getCart() {}
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return  headers.count
+    }
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: headerCellIdentifier) as? HeaderMenuCell else { return UITableViewCell()}
+        cell.config(StepHeaderContent: headers[section])
+        return cell
+    }
     
-}
-
-
-extension MenuVC: UICollectionViewDelegateFlowLayout {
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 45
+    }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = (collectionView.bounds.size.width - 20) / 2
-        return CGSize(width: width , height:  width + 20)
+ func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+           return 150
+    }
+    
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? MenuCell else { return UITableViewCell()}
+        return cell
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+       
     }
     
 }
+
+
+
+    
+

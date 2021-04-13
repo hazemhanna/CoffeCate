@@ -45,7 +45,6 @@ class SideMenuVC: UIViewController {
                 self.sideMenuArr = [
                                 SideMenuModel(name: "الصفحة الرئيسية", id: "Home"),
                                 SideMenuModel(name: "الصفحة الشخصية", id: "Profile"),
-                                SideMenuModel(name: "القائمة", id: "Menu"),
                                 SideMenuModel(name: "التنبيهات", id: "Notification"),
                                 SideMenuModel(name: "الطلبات", id: "orders"),
                                 SideMenuModel(name: "السلة", id: "Cart"),
@@ -59,7 +58,6 @@ class SideMenuVC: UIViewController {
                 self.sideMenuArr = [
                                 SideMenuModel(name: "Home", id: "Home"),
                                 SideMenuModel(name: "Profile", id: "Profile"),
-                                SideMenuModel(name: "Menu", id: "Menu"),
                                 SideMenuModel(name: "Notification", id: "Notification"),
                                 SideMenuModel(name: "orders", id: "orders"),
                                 SideMenuModel(name: "Cart", id: "Cart"),
@@ -137,8 +135,7 @@ extension SideMenuVC: UITableViewDelegate {
             pushViewController(Storyboard: "Favourite", forController: "FavoritesVC")
         case "ContactUs":
             pushViewController(Storyboard: "AboutApp", forController: "HelpAndSupportingVC")
-        case "Menu":
-            pushViewController(Storyboard: "Favourite", forController: "MenuVC")
+    
         case "Notification":
             pushViewController(Storyboard: "Main", forController: "NotificationVC")
         case "Settings":

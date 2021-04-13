@@ -23,7 +23,7 @@ import RxCocoa
 class NotificationVC: UIViewController {
 
     @IBOutlet weak var NotificationTableView: UITableView!
-    @IBOutlet weak var backButton: UIBarButtonItem!
+    @IBOutlet weak var backButton: UIButton!
     
     private let NotificationCellCellIdentifier = "NotificationCell"
     var disposeBag = DisposeBag()
@@ -38,6 +38,12 @@ class NotificationVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         bindCartTableView()
+        
+               if "lang".localized == "ar" {
+                              self.backButton.setImage(#imageLiteral(resourceName: "back (11)-1"), for: .normal)
+                          } else {
+                             self.backButton.setImage(#imageLiteral(resourceName: "back (11)"), for: .normal)
+                          }
         
     }
 

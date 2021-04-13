@@ -22,6 +22,8 @@ class HelpAndSupportingVC: UIViewController {
     @IBOutlet weak var SectionTableViewCell: UITableView!
     private let CellIdentifier = "SupportingCell"
     @IBOutlet weak var supportLabel: UILabel!
+    @IBOutlet weak var backButton: UIButton!
+
     var sectionArr = [Setting]() {
         didSet {
             DispatchQueue.main.async {
@@ -39,6 +41,13 @@ class HelpAndSupportingVC: UIViewController {
         supportLabel.adjustsFontSizeToFitWidth = true
         supportLabel.minimumScaleFactor = 0.5
         getData()
+        
+        if "lang".localized == "ar" {
+                       self.backButton.setImage(#imageLiteral(resourceName: "back (11)-1"), for: .normal)
+                   } else {
+                      self.backButton.setImage(#imageLiteral(resourceName: "back (11)"), for: .normal)
+                   }
+        
     }
     
     
